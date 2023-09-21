@@ -6,6 +6,10 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
 
 a{
     text-decoration: none;
@@ -95,4 +99,85 @@ main section .home-main-button{
     font-size: 20px;
     font-weight: 400;
     justify-self: center;
+}
+
+
+.blogs-main{
+
+    display: grid;
+
+}
+
+.blogs-main-news{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e6e9ed;
+    height:380px  ;
+   
+}
+.blogs-news-img-container {
+    grid-column: 1;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-main-news h3 {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.blogs-main-news p {
+    padding-bottom: 20px;
+}
+.blogs-main-news img {
+    width: 55%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.blogs-main-news .blogs-main-info{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.buttons-blogs{
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.blogs-posts-container{
+height: auto;
+display: block;
+}
+.blogs-posts-container .post-container{
+    display: inline-block;
+    max-width: 30%;;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    padding: 0 10px 40px;
+
+
+}
+.blogs-posts-container .post-container img{
+    width: 100%;
+}
+
+.blogs-posts-container .post-container p {
+    padding-bottom: 15px;
+}
+.blogs-posts-container h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    text-align: center;
+
+}
+footer{
+    width: 100%;
+    height:35px ;
+    background-color: #22272d;
+    border-top: 35px solid  #47cfac;
+    text-align: center;
+    margin-bottom: 0px;
+   padding-top: 10px;
+   color: white;
+    
 }
